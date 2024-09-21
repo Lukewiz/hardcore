@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     compileOnly(kotlin("stdlib", "1.9.21"))
-    compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
     compileOnly("cloud.commandframework:cloud-paper:1.8.4")
     compileOnly("io.github.monun:tap-api:4.9.8")
 }
@@ -36,7 +36,7 @@ tasks {
         archiveVersion.set("")
     }
     runServer {
-        minecraftVersion("1.20.1")
+        minecraftVersion("1.21")
         jvmArgs = listOf("-Dcom.mojang.eula.agree=true")
     }
 }
